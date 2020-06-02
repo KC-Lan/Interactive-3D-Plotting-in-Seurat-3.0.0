@@ -28,7 +28,7 @@ yourseuratobject <- RunUMAP(yourseuratobject,
                             dims = 1:10,
                             n.components = 3L)
 
-# Extract tSNE information from Seurat Object
+# Extract UMAP information from Seurat Object
 umap_1 <- yourseuratobject[["umap"]]@cell.embeddings[,1]
 umap_2 <- yourseuratobject[["umap"]]@cell.embeddings[,2]
 umap_3 <- yourseuratobject[["umap"]]@cell.embeddings[,3]
